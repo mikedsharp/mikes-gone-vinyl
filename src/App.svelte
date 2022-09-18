@@ -4,7 +4,7 @@
 
 <main>
   <div class="banner">
-    <h1>Mike's record collection. BANANA</h1>
+    <h1>Mike's record collection</h1>
   </div>
   <div class="record-grid">
     <VinylRecord />
