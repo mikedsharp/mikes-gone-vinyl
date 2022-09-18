@@ -7,24 +7,14 @@
     <h1>Mike's record collection</h1>
   </div>
   <div class="record-grid">
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
-    <VinylRecord />
+    <VinylRecord
+      cover={"/sleeves/black-sabbath-master-of-reality-sleeve.png"}
+      disc={"/sleeves/black-sabbath-master-of-reality-disc.png"}
+    />
+    <VinylRecord
+      cover={"/sleeves/pearl-jam-chicago-sleeve.png"}
+      disc={"/sleeves/pearl-jam-chicago-disc.png"}
+    />
   </div>
 </main>
 

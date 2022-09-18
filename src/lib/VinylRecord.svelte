@@ -1,5 +1,7 @@
 <script lang="ts">
     let active = false;
+    export let cover: string;
+    export let disc: string;
 </script>
 
 <div
@@ -8,8 +10,8 @@
         active = true;
     }}
 >
-    <div class="vinyl-record__sleeve" />
-    <div class="vinyl-record__disc" />
+    <div class="vinyl-record__sleeve" style="background-image: url({cover})" />
+    <div class="vinyl-record__disc" style="background-image: url({disc})" />
 </div>
 
 <style lang="scss">
@@ -22,16 +24,13 @@
 
         &__sleeve {
             position: absolute;
-            background-image: url("../assets//sleeves/pearl-jam-chicago-sleeve.png");
-            background-size: contain;
             width: 256px;
             height: 256px;
-            object-fit: scale-down;
+            background-size: contain;
             z-index: 1;
         }
         &__disc {
             position: absolute;
-            background-image: url("../assets//sleeves/pearl-jam-chicago-disc.png");
             background-size: contain;
             width: 256px;
             height: 256px;
