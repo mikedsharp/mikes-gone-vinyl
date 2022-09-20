@@ -35,13 +35,14 @@
             width: 256px;
             height: 256px;
             left: 0;
-            border-radius: 50%;
             z-index: 0;
+            transform-origin: center;
         }
         &:hover {
             .vinyl-record__disc {
-                animation: record-slide-out 0.25s linear forwards;
+                animation: record-slide-out 0.25s linear forwards,  rotating .8s linear infinite;
             }
+            
         }
         &--active {
             &:not(:hover) {
@@ -49,6 +50,15 @@
                     animation: record-slide-in 0.25s linear forwards;
                 }
             }
+        }
+    }
+
+    @keyframes rotating {
+        from {
+            transform: rotateZ(0deg);
+        }
+        to {
+            transform: rotateZ(360deg);
         }
     }
 
